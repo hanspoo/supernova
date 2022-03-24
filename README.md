@@ -6,10 +6,12 @@ Display/consume kafka events in real-time using web sockets
 
 ## run locally
 
+```
 git clone https://github.com/hanspoo/supernova
 cd supernova/
 yarn install
 yarn dev
+```
 
 ## Technologies
 

@@ -17,16 +17,20 @@ yarn dev
 
 This project is built with:
 
-Nextjs
+### Nextjs
+
 The framework (React + node)
 
-Typescript
+#### Typescript
+
 Language
 
-Antd
+### Antd
+
 UI CSS Kit
 
-kafkajs
+### kafkajs
+
 Kafka client
 
 Of course, everything can be done better, and i will appreciate your pull/merge requests.

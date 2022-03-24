@@ -1,6 +1,17 @@
 # Supernova
 
-This is a project that you can use if you want to build a kafka web app to consume events in real-time using web sockets.
+Generic, simple kafka web client app.
+
+Display/consume kafka events in real-time using web sockets
+
+## run locally
+
+git clone https://github.com/hanspoo/supernova
+cd supernova/
+yarn install
+yarn dev
+
+## Technologies
 
 This project is built with:
 

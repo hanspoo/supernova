@@ -1,7 +1,8 @@
 {
   "name": "supernova",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "kafka web app to consume events in real-time using web sockets",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,9 +10,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "antd": "^4.19.3",
+    "kafkajs": "^1.16.0",
+    "moment": "^2.29.1",
     "next": "12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "socket.io": "^4.4.1",
+    "socket.io-client": "^4.4.1"
   },
   "devDependencies": {
     "@types/node": "17.0.22",

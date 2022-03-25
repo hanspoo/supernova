@@ -79,7 +79,6 @@ export function CustomTimedTable({ list, q }: TableArgs) {
 }
 
 type CustomTableProps = {
-  // eslint-disable-next-line @typescript-eslint/ban-types
   list: object[];
   columns: Array<unknown>;
   date: string;

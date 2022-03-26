@@ -48,8 +48,11 @@ In order to run in the compose the confluent, the default broker host is process
 
 ## Docker
 
-Image build:
+build image
 docker build -t hanspoo/supernova:1.0 .
+
+publish to dockerhub
+docker push hanspoo/supernova:1.0
 
 Image available at:
 https://hub.docker.com/repository/docker/hanspoo/supernova

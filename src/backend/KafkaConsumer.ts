@@ -43,6 +43,7 @@ export default class KafkaConsumer {
     const caContent = readCa(ca);
 
     const bootstrapBroker = `${host}:${port}`;
+    console.log(`connecting to ${bootstrapBroker}`);
 
     const kafka = new Kafka({
       clientId: "switch-topic-explorer",

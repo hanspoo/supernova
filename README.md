@@ -34,3 +34,22 @@ UI CSS Kit
 Kafka client
 
 Of course, everything can be done better, and i will appreciate your pull/merge requests.
+
+## Broker configuration
+
+The broker host and port are expected to be present in a .env file.
+
+Defaults are:
+
+BROKER_HOST=broker
+BROKER_PORT=9092
+
+In order to run in the compose the confluent, the default broker host is process.env.BROKER or "broker".
+
+## Docker
+
+Image build:
+docker build -t hanspoo/supernova:1.0 .
+
+Image available at:
+https://hub.docker.com/repository/docker/hanspoo/supernova

@@ -6,7 +6,7 @@ export type KafkaSocketEvent = {
 interface KafkaAuth {
   ca: string;
   host: host;
-  port: number;
+  port: string;
   mechanism: "scram-sha-512" | "plain";
   username: string;
   password: string;

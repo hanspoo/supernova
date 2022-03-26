@@ -1,0 +1,12 @@
+---
+version: "3.9"
+services:
+  supernova:
+    build: .
+    hostname: supernova
+    container_name: supernova
+    ports:
+      - "3000:3000"
+    environment:
+      BROKER_HOST: 'broker'
+      BROKER_PORT: '9092'

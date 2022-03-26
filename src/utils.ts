@@ -3,8 +3,7 @@ import { KafkaAuth } from "./types";
 export default function envKafkaAuth(): KafkaAuth {
   return {
     ca: "",
-    host: process.env.BROKER_HOST || "broker",
-    port: process.env.BROKER_PORT || "9092",
+    bootstrapServer: process.env.BOOTSTRAP_SERVER || "broker:9092",
     mechanism: "plain",
     username: "",
     password: "",

@@ -29,25 +29,24 @@ export default class KafkaConsumer {
     this.connectionReady = connectionReady;
     this.kafkaError = kafkaError;
 
-    const { ca, host, port, username, password } = kafkaAuth;
+    const { ca, bootstrapServer, username, password } = kafkaAuth;
     // if (!ca) throw Error("CA inválido");
-    if (!host) throw Error("Invalid host");
-    if (!port) throw Error("Invalid port");
+    if (!bootstrapServer) throw Error("Invalid bootstrapServer");
+
     // if (!username) throw Error("Usuario inválido");
     // if (!password) throw Error("Contraseña inválida");
   }
 
   async run() {
-    const { ca, host, port, mechanism, username, password } = this.kafkaAuth;
+    const { ca, bootstrapServer, mechanism, username, password } = this.kafkaAuth;
 
     const caContent = readCa(ca);
 
-    const bootstrapBroker = `${host}:${port}`;
-    console.log(`connecting to ${bootstrapBroker}`);
+    console.log(`connecting to ${bootstrapServer}`);
 
     const kafka = new Kafka({
       clientId: "switch-topic-explorer",
-      brokers: [bootstrapBroker],
+      brokers: [bootstrapServer],
       // ssl: {
       //   rejectUnauthorized: false,
       //   // cert: [caContent],
